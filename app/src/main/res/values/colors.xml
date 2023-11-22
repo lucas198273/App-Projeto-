@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="roxo_200">#ffbb86fc</color>
+    <color name="roxo_500">#ff6200ee</color>
+    <color name="roxo_700">#ff3700b3</color>
+    <color name="verde_agua">#ff03dac5</color>
+    <color name="verde_escuro">#ff018786</color>
+    <color name="midinightblue">#2c3e50</color>
+    <color name="alizarian">#e74c3c</color>
+    <color name="cinza_escuro">#9e9e9e</color>
+    <color name="start">#e94057</color>
+    <color name="vermelho">#ff1744</color>
+    <color name="end">#a020f0</color>
+
+
+</resources>

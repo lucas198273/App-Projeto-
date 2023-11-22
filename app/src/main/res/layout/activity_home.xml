@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cinza_escuro"
+    tools:context=".view.Home">
+
+
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:text="Bem Vindo Lucas"
+       android:textSize="20dp"
+       android:gravity="center"
+       android:padding="20dp"
+       android:background="@color/white"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+       >
+      
+      
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:fillViewport="true">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:orientation="horizontal">
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btTodos"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Todos"
+          android:textColor="@color/cinza_escuro"
+          android:textSize="18sp"
+          android:background="@drawable/bg_button_disable"
+          android:layout_marginTop="20dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginBottom="20dp"
+          />
+     <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btcheckin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="chekin"
+          android:textColor="@color/cinza_escuro"
+          android:textSize="18sp"
+          android:background="@drawable/bg_button_disable"
+          android:layout_marginTop="20dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginBottom="20dp"
+          />
+
+         <androidx.appcompat.widget.AppCompatButton
+             android:id="@+id/btPizza"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="10dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:background="@drawable/bg_button_disable"
+             android:text="Pizza"
+             android:textColor="@color/cinza_escuro"
+             android:textSize="18sp" />
+
+         <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btkebab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Kebab"
+          android:textColor="@color/cinza_escuro"
+          android:textSize="18sp"
+             android:background="@drawable/bg_button_disable"
+          android:layout_marginTop="20dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginBottom="20dp"
+          />
+
+
+      </LinearLayout>
+     </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Todos"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="20px"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>
